@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.messer.augment.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExperienceOrbMixin",
+    "PlayerMovementMixin",
+    "EffectDurationAccessor",
+    "LivingEffectMixin",
+    "VibrationMixin",
+    "WardenMixin",
+    "OreDropsMixin"
+  ],
+  "client": [
+    "EntityGlowMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

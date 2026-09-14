@@ -1,0 +1,45 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.147'
+}
+
+base.archivesName = 'skylore-implants-neoforge'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java.withSourcesJar()
+
+// The shared layer is compiled straight into the NeoForge jar, exactly as the
+// ForgeGradle module did before the port. Do not compile it twice into one jar.
+sourceSets.main {
+    java.srcDirs += rootProject.file('common/src/main/java')
+    resources.srcDirs += rootProject.file('common/src/main/resources')
+}
+
+neoForge {
+    version = project.neoforge_version
+
+    mods {
+        augment {
+            sourceSet sourceSets.main
+        }
+    }
+
+    runs {
+        client {
+            client()
+        }
+        server {
+            server()
+        }
+    }
+}
+
+tasks.named('processResources') {
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') { expand version: project.version }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}

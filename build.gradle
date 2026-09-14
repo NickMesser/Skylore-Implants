@@ -1,0 +1,6 @@
+plugins { id 'base' }
+allprojects {
+    group = 'net.messer.skyloreimplants'
+    version = '0.2.0+1.21.1'
+}
+tasks.named('build') { dependsOn ':neoforge:build' }

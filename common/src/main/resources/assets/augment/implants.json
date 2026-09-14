@@ -1,0 +1,380 @@
+[
+  {
+    "id": "augment_brain_chip",
+    "name": "Augment Brain Chip",
+    "description": "Increases cognitive functions.\n\nXP orbs and smelting give +10% experience.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/CDra6wxv"
+  },
+  {
+    "id": "augment_shield",
+    "name": "Augment Shield",
+    "description": "Filters toxins from the blood.\n\nImmune to Poison. Wither damage reduced by 25%.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/wRFkcIrQ"
+  },
+  {
+    "id": "augmented_nervous_system",
+    "name": "Augmented Nervous System",
+    "description": "Enhances neural connections.\n\nSlowness, Weakness, Mining Fatigue, and Blindness last 30% less time.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/uwvt7o5Q"
+  },
+  {
+    "id": "bio_feedback_system",
+    "name": "Bio Feedback System",
+    "description": "Monitors and optimizes bodily functions.\n\nIf hunger is 6 or lower, restore 1 hunger every 15 seconds.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/QbsCEykC"
+  },
+  {
+    "id": "bio_optic_eye",
+    "name": "Bio Optic Eye",
+    "description": "Enhances visual acuity.\n\nPermanent Night Vision.",
+    "slots": [
+      "l_eye",
+      "r_eye"
+    ],
+    "source": "https://trello.com/c/MlGmGgTm"
+  },
+  {
+    "id": "bio_skeleton",
+    "name": "Bio Skeleton",
+    "description": "Reinforces the entire skeletal structure.\n\n20% knockback resistance. Fall damage -15%.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/dwjAWukr"
+  },
+  {
+    "id": "cyber_arm",
+    "name": "Cyber Arm",
+    "description": "Engineered for strength and precision.\n\n+1 melee damage per arm.",
+    "slots": [
+      "r_arm",
+      "l_arm"
+    ],
+    "source": "https://trello.com/c/O37Pei5F"
+  },
+  {
+    "id": "cyber_brain",
+    "name": "Cyber Brain",
+    "description": "Enhances brain functions.\n\nXP orbs, smelting, and breeding give +25% experience.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/SuQrBayY"
+  },
+  {
+    "id": "cybernetic_hand",
+    "name": "Cybernetic Hand",
+    "description": "Grants enhanced dexterity and strength.\n\n+15% mining and digging speed per hand.",
+    "slots": [
+      "l_hand",
+      "r_hand"
+    ],
+    "source": "https://trello.com/c/w2Yv4qDc"
+  },
+  {
+    "id": "cybernetic_spine",
+    "name": "Cybernetic Spine",
+    "description": "Provides superior structural support.\n\n+4 safe-fall distance. No elytra kinetic crash damage.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/LtL7OaR5"
+  },
+  {
+    "id": "data_hub",
+    "name": "Data Hub",
+    "description": "Centralizes all cybernetic data processing\n\nPull dropped items and XP orbs from 2 extra blocks away.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/RRI8NHK4"
+  },
+  {
+    "id": "digital_retina",
+    "name": "Digital Retina",
+    "description": "Improves vision clarity.\n\nHostile mobs within 16 blocks get Glowing.",
+    "slots": [
+      "l_eye",
+      "r_eye"
+    ],
+    "source": "https://trello.com/c/HPzIXoCZ"
+  },
+  {
+    "id": "energy_converter",
+    "name": "Energy Converter",
+    "description": "Converts calories more efficiently.\n\nFood restores +2 hunger (1 extra drumstick).",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/4RPhUdKr"
+  },
+  {
+    "id": "giga_ear",
+    "name": "Giga ear",
+    "description": "Amplifies distant sound.\n\nWhen a hostile starts targeting you, it gets Glowing for 5 seconds.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/ETdB0shy"
+  },
+  {
+    "id": "holo_display_arm",
+    "name": "Holo Display Arm",
+    "description": "Projects holographic displays.\n\nLooking at a mob shows its name and health in the action bar.",
+    "slots": [
+      "l_arm",
+      "r_arm"
+    ],
+    "source": "https://trello.com/c/YTZ84W01"
+  },
+  {
+    "id": "hydraulic_limbs",
+    "name": "Hydraulic Limbs",
+    "description": "Hydraulic actuators in every limb.\n\n+0.5 block/entity reach. Auto-step 1-block heights.",
+    "slots": [
+      "l_arm",
+      "r_arm",
+      "l_leg",
+      "r_leg"
+    ],
+    "source": "https://trello.com/c/l1dvmDTf"
+  },
+  {
+    "id": "hyper_legs",
+    "name": "Hyper Legs",
+    "description": "Grants superhuman speed.\n\n+20% movement speed. Speed I, not II.",
+    "slots": [
+      "l_leg",
+      "r_leg"
+    ],
+    "source": "https://trello.com/c/Usud7dnG"
+  },
+  {
+    "id": "hyper_vision_lens",
+    "name": "Hyper Vision Lens",
+    "description": "Grants telescopic vision.\n\nKeybind zooms FOV, like using a spyglass.",
+    "slots": [
+      "l_eye",
+      "r_eye"
+    ],
+    "source": "https://trello.com/c/XLMUbUyN"
+  },
+  {
+    "id": "impulse_booster",
+    "name": "Impulse Booster",
+    "description": "Increases reaction time.\n\n+15% attack speed.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/8ASCDLXA"
+  },
+  {
+    "id": "mech_jaw",
+    "name": "Mech Jaw",
+    "description": "Increases bite force and vocal abilities.\n\nUnarmed mining is stone-tier. Unarmed hits deal +1 damage.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/TnSGSFte"
+  },
+  {
+    "id": "mech_tendons",
+    "name": "Mech Tendons",
+    "description": "Reinforced artificial tendons.\n\n+10% mining speed. +15% swim speed.",
+    "slots": [
+      "l_arm",
+      "r_arm",
+      "l_leg",
+      "r_leg"
+    ],
+    "source": "https://trello.com/c/aXEd9YlZ"
+  },
+  {
+    "id": "mind_link",
+    "name": "Mind Link",
+    "description": "Connects to external networks.\n\nItem and XP orbs within 12 blocks get Glowing.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/bHMStfNB"
+  },
+  {
+    "id": "nano_bloodstream",
+    "name": "Nano Bloodstream",
+    "description": "Enhances bodily functions at the cellular level.\n\nRegeneration I while at 3 hearts or below.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/22YSiCpR"
+  },
+  {
+    "id": "cortex_connector",
+    "name": "Cortex Connector",
+    "description": "Placeholder. Effect and body slot are not specified yet. Cannot be installed.",
+    "slots": [],
+    "source": "https://trello.com/c/Ch4PXFjM"
+  },
+  {
+    "id": "nano_processor",
+    "name": "Nano Processor",
+    "description": "Accelerates local computation.\n\nOres you mine have a 10% chance to drop one extra item.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/Dl0ZlNgr"
+  },
+  {
+    "id": "nano_skin",
+    "name": "Nano Skin",
+    "description": "Provides superior protection.\n\n+2 armor points.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/CtHIcvvL"
+  },
+  {
+    "id": "nano_weave_muscle",
+    "name": "Nano Weave Muscle",
+    "description": "Nanoweave muscle fiber.\n\n25% knockback resistance.",
+    "slots": [
+      "l_arm",
+      "r_arm",
+      "l_leg",
+      "r_leg"
+    ],
+    "source": "https://trello.com/c/AsoDjATU"
+  },
+  {
+    "id": "neural_interface",
+    "name": "Neural Interface",
+    "description": "Allows direct control of cybernetic systems.\n\n+1 block reach.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/BYr4EvIX"
+  },
+  {
+    "id": "optic_enhancer",
+    "name": "Optic Enhancer",
+    "description": "Enhances visual perception with augmented reality overlays\n\nWhile sneaking, chests, barrels, and spawners within 12 blocks emit particles.",
+    "slots": [
+      "l_eye",
+      "r_eye"
+    ],
+    "source": "https://trello.com/c/YCvfaony"
+  },
+  {
+    "id": "plasma_pulse_arm",
+    "name": "Plasma Pulse Arm",
+    "description": "Discharges a plasma pulse on impact.\n\nMelee hits set the target on fire for 2 seconds.",
+    "slots": [
+      "l_arm",
+      "r_arm"
+    ],
+    "source": "https://trello.com/c/cb6YMQcV"
+  },
+  {
+    "id": "power_core",
+    "name": "Power Core",
+    "description": "Boosts energy reserves.\n\nSprinting, swimming, and jumping drain 25% less hunger.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/eWZ0bbp9"
+  },
+  {
+    "id": "pulse_enhancer",
+    "name": "Pulse Enhancer",
+    "description": "Boosts bio-electric pulse efficiency.\n\nAny heal you receive is 20% stronger (potions, gapples, regen, lifesteal).",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/J7mIAJBk"
+  },
+  {
+    "id": "pulse_wrist",
+    "name": "Pulse Wrist",
+    "description": "Enhances pulse accuracy.\n\nBows and crossbows draw 15% faster.",
+    "slots": [
+      "l_hand",
+      "r_hand"
+    ],
+    "source": "https://trello.com/c/LlydZM9V"
+  },
+  {
+    "id": "quantum_interface",
+    "name": "Quantum Interface",
+    "description": "Connects to quantum networks.\n\nFalling more than 3 blocks grants Slow Falling for 3 seconds. 8 second cooldown.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/DPfuNx4h"
+  },
+  {
+    "id": "sensory_module",
+    "name": "Sensory Module",
+    "description": "Enhances sensory perception.\n\nWhile sneaking, you make no vibrations. Sculk sensors and wardens ignore you.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/Hl0BvdkF"
+  },
+  {
+    "id": "servo_motor_arm",
+    "name": "Servo Motor Arm",
+    "description": "High-torque servo motors.\n\nMelee hits disable enemy shields, like an axe.",
+    "slots": [
+      "l_arm",
+      "r_arm"
+    ],
+    "source": "https://trello.com/c/PhUcqSm2"
+  },
+  {
+    "id": "synthetic_heart",
+    "name": "Synthetic Heart",
+    "description": "Ensures enhanced endurance and vitality.\n\n+2 max health (1 extra heart).",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/LocPBNHp"
+  },
+  {
+    "id": "synthetic_lungs",
+    "name": "Synthetic Lungs",
+    "description": "Enhances respiratory efficiency.\n\nWater Breathing. +30% swim speed.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/tR9C6LVw"
+  },
+  {
+    "id": "virtual_assistant_node",
+    "name": "Virtual Assistant Node",
+    "description": "Provides a virtual assistant.\n\nHUD overlay: coordinates, facing, and time of day.",
+    "slots": [
+      "head"
+    ],
+    "source": "https://trello.com/c/sNUnBIub"
+  },
+  {
+    "id": "techno_core",
+    "name": "Techno Core",
+    "description": "Stabilizes implant power draw.\n\n+1 armor toughness. Helps against strong hits.",
+    "slots": [
+      "torso"
+    ],
+    "source": "https://trello.com/c/hxzGpMaN"
+  }
+]

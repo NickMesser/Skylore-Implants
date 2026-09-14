@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "augment:block/modification_chamber"
+    }
+  }
+}
