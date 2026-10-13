@@ -42,7 +42,10 @@ public final class AugmentNeoForge {
             .build());
         TABS.register(modBus);
         modBus.addListener(this::payloads);
-        Platform.sync=p->PacketDistributor.sendToPlayer(p,new Loadout(ImplantData.slots(p).copy()));
+        Platform.sync=p->{
+            PacketDistributor.sendToPlayer(p,new Loadout(ImplantData.slots(p).copy()));
+            PacketDistributor.sendToPlayersTrackingEntityAndSelf(p,new Worn(p.getUUID(),ImplantData.wornBy(p)));
+        };
         Platform.attributes=p->{
             var add=AttributeModifier.Operation.ADD_VALUE; var mul=AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL;
             double hydraulic=ImplantEffects.has(p,"hydraulic_limbs")?.5:0;
@@ -57,6 +60,18 @@ public final class AugmentNeoForge {
     private void payloads(RegisterPayloadHandlersEvent event) {
         event.registrar("1").playToClient(Loadout.TYPE,Loadout.STREAM_CODEC,
             (msg,ctx)->ctx.enqueueWork(()->ImplantData.client=msg.data()));
+        event.registrar("1").playToClient(Worn.TYPE,Worn.STREAM_CODEC,
+            (msg,ctx)->ctx.enqueueWork(()->ImplantData.worn(msg.player(),msg.slots())));
+    }
+
+    /** What one player wears, for every client that can see them to render. */
+    public record Worn(java.util.UUID player,CompoundTag slots) implements CustomPacketPayload {
+        public static final CustomPacketPayload.Type<Worn> TYPE=new CustomPacketPayload.Type<>(ResourceLocation.fromNamespaceAndPath(Augment.ID,"worn"));
+        public static final StreamCodec<RegistryFriendlyByteBuf,Worn> STREAM_CODEC=new StreamCodec<>() {
+            @Override public Worn decode(RegistryFriendlyByteBuf buf) {var id=buf.readUUID();CompoundTag tag=buf.readNbt();return new Worn(id,tag==null?new CompoundTag():tag);}
+            @Override public void encode(RegistryFriendlyByteBuf buf,Worn msg) {buf.writeUUID(msg.player());buf.writeNbt(msg.slots());}
+        };
+        @Override public CustomPacketPayload.Type<? extends CustomPacketPayload> type() {return TYPE;}
     }
 
     /** 1.21 carries payloads as {@link CustomPacketPayload} with a {@link StreamCodec}. */
@@ -74,6 +89,10 @@ public final class AugmentNeoForge {
     @SubscribeEvent public void login(PlayerEvent.PlayerLoggedInEvent e){sync(e.getEntity());}
     @SubscribeEvent public void respawn(PlayerEvent.PlayerRespawnEvent e){sync(e.getEntity());}
     @SubscribeEvent public void dimension(PlayerEvent.PlayerChangedDimensionEvent e){sync(e.getEntity());}
+    @SubscribeEvent public void tracking(PlayerEvent.StartTracking e){
+        if(e.getEntity() instanceof ServerPlayer viewer && e.getTarget() instanceof ServerPlayer seen)
+            PacketDistributor.sendToPlayer(viewer,new Worn(seen.getUUID(),ImplantData.wornBy(seen)));
+    }
     @SubscribeEvent public void speed(PlayerEvent.BreakSpeed e){e.setNewSpeed(ImplantEffects.mining(e.getEntity(),e.getState(),e.getNewSpeed()));}
     @SubscribeEvent public void harvest(PlayerEvent.HarvestCheck e){if(ImplantEffects.stoneHarvest(e.getEntity(),e.getTargetBlock()))e.setCanHarvest(true);}
     @SubscribeEvent public void heal(LivingHealEvent e){if(e.getEntity() instanceof Player p)e.setAmount(ImplantEffects.healing(p,e.getAmount()));}

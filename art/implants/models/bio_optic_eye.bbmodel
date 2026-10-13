@@ -1,0 +1,684 @@
+{
+ "meta": {
+  "format_version": "5.0",
+  "model_format": "free",
+  "box_uv": false
+ },
+ "name": "bio_optic_eye",
+ "model_identifier": "",
+ "visible_box": [
+  1,
+  1,
+  0
+ ],
+ "variable_placeholders": "",
+ "multi_file_ruleset": "",
+ "variable_placeholder_buttons": [],
+ "timeline_setups": [],
+ "unhandled_root_fields": {},
+ "resolution": {
+  "width": 16,
+  "height": 16
+ },
+ "elements": [
+  {
+   "name": "optic",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    0.5,
+    26.5,
+    -4.75
+   ],
+   "to": [
+    3.5,
+    29.3,
+    -4.05
+   ],
+   "autouv": 0,
+   "color": 8,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3,
+      0,
+      0,
+      3
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      8,
+      0,
+      7,
+      3
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      6,
+      0,
+      3,
+      3
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      7,
+      0,
+      6,
+      3
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      11,
+      0,
+      8,
+      1
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      14,
+      0,
+      11,
+      1
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "7e219545-0320-ff50-2e5e-ed5c972d0674"
+  },
+  {
+   "name": "brow",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    0.5,
+    29.3,
+    -4.6
+   ],
+   "to": [
+    3.5,
+    29.7,
+    -4.05
+   ],
+   "autouv": 0,
+   "color": 0,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      3,
+      3,
+      0,
+      4
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      14,
+      3,
+      13,
+      4
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      6,
+      3,
+      3,
+      4
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      13,
+      3,
+      12,
+      4
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      9,
+      3,
+      6,
+      4
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      12,
+      3,
+      9,
+      4
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "08b6f357-49d0-41f7-6fa1-ce4eb4a3cdc2"
+  },
+  {
+   "name": "stalk",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    3.5,
+    27.4,
+    -4.5
+   ],
+   "to": [
+    4.4,
+    28,
+    -4.05
+   ],
+   "autouv": 0,
+   "color": 6,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      15,
+      3,
+      14,
+      4
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      2,
+      4,
+      1,
+      5
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      16,
+      3,
+      15,
+      4
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      1,
+      4,
+      0,
+      5
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      3,
+      4,
+      2,
+      5
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      4,
+      4,
+      3,
+      5
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "7a6421e4-fd63-e418-9eeb-1e6154eb40c6"
+  },
+  {
+   "name": "optic",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    -3.5,
+    26.5,
+    -4.75
+   ],
+   "to": [
+    -0.5,
+    29.3,
+    -4.05
+   ],
+   "autouv": 0,
+   "color": 4,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      0,
+      3,
+      3
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      6,
+      0,
+      7,
+      3
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      3,
+      0,
+      6,
+      3
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      7,
+      0,
+      8,
+      3
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      8,
+      0,
+      11,
+      1
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      11,
+      0,
+      14,
+      1
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "ef41928c-ae0f-f06e-1465-f0f77dc0b380"
+  },
+  {
+   "name": "brow",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    -3.5,
+    29.3,
+    -4.6
+   ],
+   "to": [
+    -0.5,
+    29.7,
+    -4.05
+   ],
+   "autouv": 0,
+   "color": 1,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      3,
+      3,
+      4
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      12,
+      3,
+      13,
+      4
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      3,
+      3,
+      6,
+      4
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      13,
+      3,
+      14,
+      4
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      6,
+      3,
+      9,
+      4
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      9,
+      3,
+      12,
+      4
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "194fdc28-8bf3-1a22-5dd5-2e1608a40b8e"
+  },
+  {
+   "name": "stalk",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    -4.4,
+    27.4,
+    -4.5
+   ],
+   "to": [
+    -3.5,
+    28,
+    -4.05
+   ],
+   "autouv": 0,
+   "color": 9,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      14,
+      3,
+      15,
+      4
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      0,
+      4,
+      1,
+      5
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      15,
+      3,
+      16,
+      4
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      1,
+      4,
+      2,
+      5
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      2,
+      4,
+      3,
+      5
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      3,
+      4,
+      4,
+      5
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "1f07e1a2-1a9c-3d68-312b-57bd2c17503c"
+  }
+ ],
+ "groups": [
+  {
+   "name": "head",
+   "uuid": "889a40e4-c665-c6af-3d61-3da81b445aaa",
+   "export": true,
+   "locked": false,
+   "scope": 0,
+   "selected": false,
+   "_static": {
+    "properties": {},
+    "temp_data": {}
+   },
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "color": 0,
+   "children": [],
+   "reset": false,
+   "shade": true,
+   "mirror_uv": false,
+   "visibility": true,
+   "autouv": 0,
+   "isOpen": false,
+   "primary_selected": false
+  },
+  {
+   "name": "bio_optic_eye_l_eye",
+   "uuid": "4cb44ec7-3502-95a6-377f-77d91d77147a",
+   "export": true,
+   "locked": false,
+   "scope": 0,
+   "selected": false,
+   "_static": {
+    "properties": {},
+    "temp_data": {}
+   },
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "color": 0,
+   "children": [],
+   "reset": false,
+   "shade": true,
+   "mirror_uv": false,
+   "visibility": true,
+   "autouv": 0,
+   "isOpen": false,
+   "primary_selected": false
+  },
+  {
+   "name": "bio_optic_eye_r_eye",
+   "uuid": "0906bae9-5d58-22a4-c395-04e0b43eb558",
+   "export": true,
+   "locked": false,
+   "scope": 0,
+   "selected": false,
+   "_static": {
+    "properties": {},
+    "temp_data": {}
+   },
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "color": 0,
+   "children": [],
+   "reset": false,
+   "shade": true,
+   "mirror_uv": false,
+   "visibility": true,
+   "autouv": 0,
+   "isOpen": false,
+   "primary_selected": false
+  }
+ ],
+ "outliner": [
+  {
+   "uuid": "889a40e4-c665-c6af-3d61-3da81b445aaa",
+   "isOpen": false,
+   "children": [
+    {
+     "uuid": "4cb44ec7-3502-95a6-377f-77d91d77147a",
+     "isOpen": false,
+     "children": [
+      "7e219545-0320-ff50-2e5e-ed5c972d0674",
+      "08b6f357-49d0-41f7-6fa1-ce4eb4a3cdc2",
+      "7a6421e4-fd63-e418-9eeb-1e6154eb40c6"
+     ]
+    },
+    {
+     "uuid": "0906bae9-5d58-22a4-c395-04e0b43eb558",
+     "isOpen": false,
+     "children": [
+      "ef41928c-ae0f-f06e-1465-f0f77dc0b380",
+      "194fdc28-8bf3-1a22-5dd5-2e1608a40b8e",
+      "1f07e1a2-1a9c-3d68-312b-57bd2c17503c"
+     ]
+    }
+   ]
+  }
+ ],
+ "textures": [
+  {
+   "name": "bio_optic_eye",
+   "path": "",
+   "folder": "",
+   "namespace": "",
+   "id": "0",
+   "group": "",
+   "scope": 0,
+   "width": 16,
+   "height": 16,
+   "uv_width": 16,
+   "uv_height": 16,
+   "particle": false,
+   "use_as_default": false,
+   "layers_enabled": false,
+   "sync_to_project": "",
+   "file_format": "png",
+   "render_mode": "default",
+   "render_sides": "auto",
+   "wrap_mode": "limited",
+   "pbr_channel": "color",
+   "fps": 7,
+   "frame_time": 1,
+   "frame_order_type": "loop",
+   "frame_order": "",
+   "frame_interpolate": false,
+   "visible": true,
+   "internal": true,
+   "saved": true,
+   "uuid": "8068d102-46bc-75fa-59bc-32a50e0147a1",
+   "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAaUlEQVR4nGMMy+r8X1YRwdDVsYIBRBMLTOTkGUE0Y/Sbj/8Nhd8yODxmBkvsP3mP4fT+U3DDYApxAabfdTMY/q95CHYBCIA0kwIYu1fv/89ABojuWA0x4JlxFooBUmen4XXyKBgFwxQAAF16JDS+FJRHAAAAAElFTkSuQmCC"
+  }
+ ]
+}

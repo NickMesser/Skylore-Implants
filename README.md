@@ -19,6 +19,8 @@ The 1.20.1 Forge build this replaces lived on Architectury API. That dependency 
 
 The left panel displays your actual player model with a short zoom-in transition. Hyper Vision Lens uses **Z** to zoom while playing; rebind it in Controls. Installed implants survive death, dimension travel, and restarts.
 
+Every installed implant shows on your body, and other players see it too. Each one sits on the body part it is installed in and moves with it. Implants fit under worn armour, so a helmet, chestplate, leggings or boots hide them. Lights on the implants glow in the dark.
+
 Cortex Connector is intentionally blank: it has a clearly labelled placeholder tooltip and the vanilla structure-void placeholder icon, with no effect, recipe, or installable body slot.
 
 See [the complete implant and recipe catalog](docs/IMPLANTS.md). Each implant recipe uses four iron ingots, two copper ingots, two redstone, and its unique core ingredient. These recipes are initial balance choices because the cards do not prescribe recipes.
@@ -47,6 +49,7 @@ This starts the NeoForge development client with Skylore Implants. Marionette is
 
 - `common/`: registries; implant catalog, persistence and behavior; chamber block, menu, renderer and screen; vanilla mixins; textures and recipes.
 - `neoforge/`: NeoForge entrypoint, networking and events, extended attribute bindings, client event registration and build configuration.
+- `art/implants/`: body-model source. `implant_art.py` holds every implant's cubes, paints the textures, checks each one fits under armour, and exports the models the game draws. `models/` holds the matching Blockbench files.
 - `docs/PORTING.md`: the loader boundary and what a Fabric port would still need.
 - `docs/VERIFICATION.md`: the runtime evidence for this build.
 

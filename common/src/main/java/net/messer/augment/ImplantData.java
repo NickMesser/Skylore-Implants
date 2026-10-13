@@ -36,6 +36,17 @@ public final class ImplantData extends SavedData {
         int n=0; for(var s:BodySlot.values()) if(slots.getCompound(s.id()).getString("id").equals(key)) n++; return n;
     }
     public static boolean has(Player p,String id) { return count(p,id)>0; }
+    /** Client copy of what every nearby player wears, slot id to implant id, for rendering. */
+    private static final Map<UUID,CompoundTag> WORN=new HashMap<>();
+    public static CompoundTag worn(UUID player) { return WORN.getOrDefault(player,new CompoundTag()); }
+    public static void worn(UUID player,CompoundTag slots) { if(slots.isEmpty()) WORN.remove(player); else WORN.put(player,slots); }
+    public static void clearWorn() { WORN.clear(); }
+    /** Slot id to implant id for one player; the payload other clients render from. */
+    public static CompoundTag wornBy(Player p) {
+        var out=new CompoundTag();
+        for(var s:BodySlot.values()) { String id=id(stack(p,s)); if(!id.isEmpty()) out.putString(s.id(),id); }
+        return out;
+    }
     public static void changed(ServerPlayer p) { of(p).setDirty(); ImplantEffects.attributes(p); Platform.sync.accept(p); }
     @Override public CompoundTag save(CompoundTag tag,HolderLookup.Provider registries) {
         players.forEach((id,slots)->tag.put(id.toString(),slots.copy())); return tag;

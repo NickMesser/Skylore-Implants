@@ -25,6 +25,9 @@ public final class AugmentClient {
     @SubscribeEvent public static void screens(RegisterMenuScreensEvent e){e.register(Augment.CHAMBER_MENU.get(),ChamberScreen::new);}
     @SubscribeEvent public static void setup(FMLClientSetupEvent e){e.enqueueWork(()->BlockEntityRenderers.register(Augment.CHAMBER_ENTITY.get(),ChamberRenderer::new));}
     @SubscribeEvent public static void keys(RegisterKeyMappingsEvent e){e.register(ZOOM);}
+    @SubscribeEvent public static void layers(EntityRenderersEvent.AddLayers e){
+        for(var skin:e.getSkins())if(e.getSkin(skin) instanceof net.minecraft.client.renderer.entity.player.PlayerRenderer r)r.addLayer(new ImplantLayer(r));
+    }
     @SubscribeEvent public static void fov(ViewportEvent.ComputeFov e){var mc=Minecraft.getInstance();if(mc.player!=null && mc.screen==null && ZOOM.isDown() && ImplantEffects.has(mc.player,"hyper_vision_lens"))e.setFOV(e.getFOV()*.22);}
     @SubscribeEvent public static void hud(RenderGuiEvent.Post e){var mc=Minecraft.getInstance();var p=mc.player;if(p==null||mc.screen!=null||mc.options.hideGui)return;
         if(ImplantEffects.has(p,"virtual_assistant_node")){
@@ -37,5 +40,5 @@ public final class AugmentClient {
         if(p!=null && p.tickCount%5==0 && ImplantEffects.has(p,"holo_display_arm") && mc.hitResult instanceof EntityHitResult hit && hit.getEntity() instanceof LivingEntity target)
             p.displayClientMessage(Component.literal(target.getName().getString()+"  "+String.format(java.util.Locale.ROOT,"%.1f / %.1f HP",target.getHealth(),target.getMaxHealth())),true);
     }
-    @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut e){ImplantData.client=new CompoundTag();}
+    @SubscribeEvent public static void logout(ClientPlayerNetworkEvent.LoggingOut e){ImplantData.client=new CompoundTag();ImplantData.clearWorn();}
 }

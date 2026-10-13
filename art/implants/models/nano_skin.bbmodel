@@ -1,0 +1,477 @@
+{
+ "meta": {
+  "format_version": "5.0",
+  "model_format": "free",
+  "box_uv": false
+ },
+ "name": "nano_skin",
+ "model_identifier": "",
+ "visible_box": [
+  1,
+  1,
+  0
+ ],
+ "variable_placeholders": "",
+ "multi_file_ruleset": "",
+ "variable_placeholder_buttons": [],
+ "timeline_setups": [],
+ "unhandled_root_fields": {},
+ "resolution": {
+  "width": 16,
+  "height": 16
+ },
+ "elements": [
+  {
+   "name": "front",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    -3.6,
+    13.6,
+    -2.4
+   ],
+   "to": [
+    3.6,
+    23.6,
+    -2.3
+   ],
+   "autouv": 0,
+   "color": 4,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      0,
+      7,
+      10
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      28,
+      0,
+      29,
+      10
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      7,
+      0,
+      14,
+      10
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      29,
+      0,
+      30,
+      10
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      8,
+      20,
+      15,
+      21
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      15,
+      20,
+      22,
+      21
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "951f1761-a56f-cabe-50e2-0b476fc53662"
+  },
+  {
+   "name": "back",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    -3.6,
+    13.6,
+    2.3
+   ],
+   "to": [
+    3.6,
+    23.6,
+    2.4
+   ],
+   "autouv": 0,
+   "color": 8,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      14,
+      0,
+      21,
+      10
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      30,
+      0,
+      31,
+      10
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      21,
+      0,
+      28,
+      10
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      31,
+      0,
+      32,
+      10
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      22,
+      20,
+      29,
+      21
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      0,
+      21,
+      7,
+      22
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "1dec7830-c504-b90c-74d1-ecde2a6b6db6"
+  },
+  {
+   "name": "seam",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    -0.4,
+    13.6,
+    -2.5
+   ],
+   "to": [
+    0.4,
+    23.6,
+    -2.4
+   ],
+   "autouv": 0,
+   "color": 6,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      0,
+      10,
+      1,
+      20
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      2,
+      10,
+      3,
+      20
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      1,
+      10,
+      2,
+      20
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      3,
+      10,
+      4,
+      20
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      17,
+      21,
+      18,
+      22
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      18,
+      21,
+      19,
+      22
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "41ad5347-12f8-dfee-cb6b-48a64ca30207"
+  },
+  {
+   "name": "collar",
+   "box_uv": false,
+   "render_order": "default",
+   "locked": false,
+   "export": true,
+   "scope": 0,
+   "allow_mirror_modeling": true,
+   "from": [
+    -3.8,
+    23.6,
+    -2.4
+   ],
+   "to": [
+    3.8,
+    24.2,
+    2.4
+   ],
+   "autouv": 0,
+   "color": 3,
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "faces": {
+    "north": {
+     "uv": [
+      20,
+      10,
+      28,
+      11
+     ],
+     "texture": 0
+    },
+    "east": {
+     "uv": [
+      7,
+      21,
+      12,
+      22
+     ],
+     "texture": 0
+    },
+    "south": {
+     "uv": [
+      0,
+      20,
+      8,
+      21
+     ],
+     "texture": 0
+    },
+    "west": {
+     "uv": [
+      12,
+      21,
+      17,
+      22
+     ],
+     "texture": 0
+    },
+    "up": {
+     "uv": [
+      4,
+      10,
+      12,
+      15
+     ],
+     "texture": 0
+    },
+    "down": {
+     "uv": [
+      12,
+      10,
+      20,
+      15
+     ],
+     "texture": 0
+    }
+   },
+   "type": "cube",
+   "uuid": "5114ad39-b2cb-c8c0-28ed-3d5b9718c38d"
+  }
+ ],
+ "groups": [
+  {
+   "name": "body",
+   "uuid": "a9e61b5d-6d0f-5e7f-e35c-49b5c6c0fd2f",
+   "export": true,
+   "locked": false,
+   "scope": 0,
+   "selected": false,
+   "_static": {
+    "properties": {},
+    "temp_data": {}
+   },
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "color": 0,
+   "children": [],
+   "reset": false,
+   "shade": true,
+   "mirror_uv": false,
+   "visibility": true,
+   "autouv": 0,
+   "isOpen": false,
+   "primary_selected": false
+  },
+  {
+   "name": "nano_skin_torso",
+   "uuid": "0a2c511a-a96b-9dda-366c-f0cae03b2dc7",
+   "export": true,
+   "locked": false,
+   "scope": 0,
+   "selected": false,
+   "_static": {
+    "properties": {},
+    "temp_data": {}
+   },
+   "origin": [
+    0,
+    24,
+    0
+   ],
+   "rotation": [
+    0,
+    0,
+    0
+   ],
+   "color": 0,
+   "children": [],
+   "reset": false,
+   "shade": true,
+   "mirror_uv": false,
+   "visibility": true,
+   "autouv": 0,
+   "isOpen": false,
+   "primary_selected": false
+  }
+ ],
+ "outliner": [
+  {
+   "uuid": "a9e61b5d-6d0f-5e7f-e35c-49b5c6c0fd2f",
+   "isOpen": false,
+   "children": [
+    {
+     "uuid": "0a2c511a-a96b-9dda-366c-f0cae03b2dc7",
+     "isOpen": false,
+     "children": [
+      "951f1761-a56f-cabe-50e2-0b476fc53662",
+      "1dec7830-c504-b90c-74d1-ecde2a6b6db6",
+      "41ad5347-12f8-dfee-cb6b-48a64ca30207",
+      "5114ad39-b2cb-c8c0-28ed-3d5b9718c38d"
+     ]
+    }
+   ]
+  }
+ ],
+ "textures": [
+  {
+   "name": "nano_skin",
+   "path": "",
+   "folder": "",
+   "namespace": "",
+   "id": "0",
+   "group": "",
+   "scope": 0,
+   "width": 32,
+   "height": 32,
+   "uv_width": 32,
+   "uv_height": 32,
+   "particle": false,
+   "use_as_default": false,
+   "layers_enabled": false,
+   "sync_to_project": "",
+   "file_format": "png",
+   "render_mode": "default",
+   "render_sides": "auto",
+   "wrap_mode": "limited",
+   "pbr_channel": "color",
+   "fps": 7,
+   "frame_time": 1,
+   "frame_order_type": "loop",
+   "frame_order": "",
+   "frame_interpolate": false,
+   "visible": true,
+   "internal": true,
+   "saved": true,
+   "uuid": "5da22fc1-7d4a-b27f-a29d-e28bb428d05d",
+   "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA1UlEQVR4nGM0d8n7r7KimeFORC0DCCCz0fnUkkMGjNFvPv43FH7LcP6tMFgAmY3Op5YcMmABuwzZheiupYUcEmBiGGDAOBoFDKNREDHSc0HFlv//kQX2T8hneP3sHVbFolJCYJoS+ZN7JjEii7FgU3jv2hIcBuQRlEe3ANVcTDEWbAqVtGJwmUGUPCmAhdohQBUHKA1kCJwkMQ5JkR+U2ZBp1AEMAwwYQW1CQiUbtduFyAmdkVCjFNlx2IpakJhjwUQwu8OHEWcOGgWjYBSMglHAgAMAAMFbBkXrBqSgAAAAAElFTkSuQmCC"
+  }
+ ]
+}
